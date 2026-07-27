@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding RSVP</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Wedding RSVP</h1>
+
+        <form id="rsvpForm">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label>Will you attend?</label>
+
+            <div class="radio-group">
+                <input type="radio" id="yes" name="attendance" value="YES" required>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="attendance" value="NO">
+                <label for="no">No</label>
+            </div>
+
+            <button type="submit">Submit RSVP</button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <hr>
+
+        <h2>Venue Information</h2>
+
+        <p><strong>Date:</strong> 20 June 2027</p>
+        <p><strong>Venue:</strong> The Grand Hall</p>
+        <p><strong>Address:</strong> 123 Example Street, London</p>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
